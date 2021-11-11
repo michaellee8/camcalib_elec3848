@@ -35,7 +35,7 @@ ret, mtx, dist, rvecs, tvecs = cv.calibrateCamera(objpoints, imgpoints, gray.sha
 
 print("ret, mtx, dist, rvecs, tvecs: ",ret, mtx, dist, rvecs, tvecs)
 
-img - cv.imread("20211111-130716.jpg")
+img = cv.imread("20211111-130618.jpg")
 h, w = img.shape[:2]
 newcameramtx, roi = cv.getOptimalNewCameraMatrix(mtx, dist, (w,h), 1, (w,h))
 # undistort
